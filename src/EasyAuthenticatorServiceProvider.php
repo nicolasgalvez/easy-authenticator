@@ -11,7 +11,7 @@ class EasyAuthenticatorServiceProvider extends ServiceProvider {
         $this->loadViewsFrom(__DIR__.'/Views', 'easyAuthenticator');
 
         $this->publishes([
-            __DIR__.'/Config/EasyAuthenticator.php' => config_path('easyAuthenticator.php'),
+            __DIR__.'/Config/easyAuthenticator.php' => config_path('easyAuthenticator.php'),
             __DIR__.'/Views' => base_path('resources/views/bernardino/easyAuthenticator'),
             __DIR__.'/Migrations' => base_path('database/migrations'),
         ]);
